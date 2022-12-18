@@ -1,0 +1,97 @@
+*{
+    font-family: poppins;
+}
+p, i{
+    color: #389238;
+    font-weight: 400;
+}
+#tema1 .cards{
+    margin: 40px 20px;
+}
+#tema1 .card-kiri{
+    border: none;
+    background-color: #F5F5F5;
+}
+#tema1 .card-kiri .fotos{
+    background-color: #389238;
+    height:260px;
+    margin: 0px 16px;
+    border-radius: 0px 0px 200px 200px;
+}
+#tema1 .card-kiri img{
+    border-radius: 50%;
+    border: 10px solid #fff;
+    width: 200px;
+    margin-top: 140px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+#tema1 .keterangan{
+    background-color: #389238;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+}
+
+/* data pribadi */
+.data_pribadi .card{
+    border: none;
+    background-color: transparent;
+    margin-top: 120px;
+}
+.borders{
+    border: 4px solid #389238;
+    margin: auto;
+    height: 62px;
+    padding: 0px 100px 0px 0px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.keterangan{
+    background-color: #389238;
+    border-radius: 40px 50px 50px 50px;
+    padding: 0px 40px;
+}
+
+
+/* sosmed */
+.sosmed .card{
+    border: none;
+    background-color: transparent;
+}
+
+
+/* hobi */
+.hobi .card{
+    border: none;
+    background-color: transparent;
+}
+
+
+/* keahlian */
+.keahlian .card{
+    border: none;
+    background-color: transparent;
+}
+
+
+
+/* kanan */
+.kanan .card{
+    border: none;
+}
+.nama h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #389238;
+    margin-bottom: 0px;
+}
+.nama .profesi{
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0em;
+}

@@ -1,0 +1,205 @@
+*{
+    font-family: poppins;
+}
+.navbar{
+    background-color: #57B5E0;
+    box-shadow: 0px 0px 20px rgb(174, 199, 195);
+}
+.navbar ul li a{
+    color: #fff;
+}
+.navbar .btn-buat{
+    background-color: #fff;
+    padding: 8px 30px;
+    border: none;
+    color: rgb(125, 143, 140);
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration:none;
+    transition: all ease-in-out 0.3s;
+}
+.navbar .btn-buat:hover{
+    transition: all ease-in-out 0.3s;
+    padding: 8px 30px;
+    border: none;
+    color: #57B5E0;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* hero */
+#hero{
+    margin-top: 12%;
+}
+#hero span{
+    color: rgb(125, 143, 140);
+}
+#hero .title{
+    font-size: 34px;
+    font-weight: 600;
+    color: #57B5E0;
+    line-height: 40px;
+}
+#hero .subtitle{
+    text-align: justify;
+    color: rgb(125, 143, 140);
+}
+#hero .scroll a{
+    text-decoration: none;
+    color: #57B5E0;
+    font-weight: 600;
+}
+#hero .scroll{
+    display: flex;
+    justify-content: end;
+    height: 20px;
+    width: 100%;
+}
+#hero .box {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 20px;
+    transform-origin: bottom;
+}
+#hero .bounce-4 {
+    animation-name: bounce-4;
+    animation-timing-function: ease;
+}
+@keyframes bounce-4 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-14px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+#hero hr{
+    color: #57B5E0;
+}
+
+/* fitur */
+#fitur{
+    margin-top: 50px;
+    padding-top: 70px;
+}
+#fitur .fitur{
+    background-color: #57b5e049;
+}
+#fitur .card{
+    border: none;
+    padding: 10px;
+    transition: all ease-in-out 0.4s;
+    border: 3px solid #57b5e049;
+    border-radius: 8px;
+    color: rgb(125, 143, 140);
+}
+#fitur .card:hover{
+    border: 3px solid #fff;
+    color: #fff;
+    background-color: #57B5E0;
+    transition: all ease-in-out 0.4s;
+}
+
+
+/* tema */
+#tema{
+    padding-top: 90px;
+    margin-top: 30px;
+}
+#tema .title{
+    font-size: 36px;
+    color: #57B5E0;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+#tema .subtitle{
+    font-size: 18px;
+    color: rgb(125, 143, 140);
+}
+#tema .card{
+    margin-top: 30px;
+    border: 2px solid #57B5E0;
+    padding: 10px;
+    color: rgb(125, 143, 140);;
+}
+#tema .card img{
+    background-size: cover;
+}
+#tema .card .btn-preview{
+    border: none;
+    color: #57B5E0;
+    padding-top: 10px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+#kontak{
+    margin-top: 100px;
+    background-color: #57b5e049;
+}
+#kontak .title{
+    padding-top: 90px;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+    /* color:rgb(125, 143, 140); */
+    color: #57B5E0;
+}
+#kontak .subtitle{
+    color:rgb(125, 143, 140);
+    font-size: 18px;
+    text-align: center ;
+    padding-bottom: 30px;
+}
+
+#kontak .card{
+    border: none;
+    background-color: transparent;
+    color: rgb(103, 116, 113);
+}
+#kontak .card i{
+    color: #57B5E0;
+}
+#kontak .card .ket{
+    font-weight: 600;
+    color: rgb(63, 71, 70);
+}
+#kontak .bg-input{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    color: #57B5E0;
+}
+#kontak .bg-input input, .bg-input textarea{
+    outline: none;
+    border: none;
+}
+
+#kontak .btn-submit{
+    border: none;
+    background-color:#57B5E0;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 36px;
+    border-radius: 8px;
+}
+
+footer p{
+    color: rgb(103, 116, 113);
+}
+
+
+/* preview */
+#preview .card{
+    border: none;
+}
+#preview .btn-submit{
+    border: none;
+    background-color:#57B5E0;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 8px;
+}

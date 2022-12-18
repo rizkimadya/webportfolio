@@ -1,0 +1,42 @@
+* {
+    font-family: poppins;
+}
+
+#login {
+    contain: content;
+    margin-top: 4%;
+}
+
+#login .form {
+    align-self: center;
+}
+
+#login .form .title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    color: #4B4DF7;
+    text-align: center;
+}
+
+
+
+#login .form input{
+    border: none;
+    border-left: 6px solid #4B4DF7;
+    background-color: #E8EFFF;
+    width: 100%;
+    padding: 16px 0px 16px 30px;
+    outline: none;
+}
+
+#login .form .btn-login{
+    background-color: #4B4DF7;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 40px;
+    border-radius: 4px;
+}
+

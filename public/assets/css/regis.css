@@ -1,0 +1,11 @@
+*{
+    font-family:poppins;
+}
+#registrasi h1 span{
+    color: #57B5E0;;
+}
+#registrasi .card{
+    background-color:#fff;
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.15);
+    border:none;
+}
