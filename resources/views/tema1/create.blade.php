@@ -52,12 +52,21 @@
                                                 <option value="">Pilih Jenis Tema</option>
                                                 <option value="tema1">Tema 1</option>
                                                 <option value="tema2">Tema 2</option>
+                                                <option value="tema3">Tema 3</option>
                                             </select>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="nama" class="form-label">Nama Lengkap</label>
                                                 <input class="form-control" type="text" name="nama" id="nama" placeholder="masukkan nama" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="agama" class="form-label">Agama</label>
+                                                <input class="form-control" type="text" name="agama" id="agama" placeholder="masukkan agama" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="kewarganegaraan" class="form-label">Kewarganegaraan</label>
+                                                <input class="form-control" type="text" name="kewarganegaraan" id="kewarganegaraan" placeholder="masukkan kewarganegaraan" required>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="pekerjaan" class="form-label">Pekerjaan</label>
@@ -67,12 +76,12 @@
                                                 <label for="tempat_lahir" class="form-label">Tempat Kelahiran</label>
                                                 <input class="form-control" type="text" name="tempat_lahir" id="tempat_lahir" placeholder="masukkan tempat kelahiran" required>
                                             </div>    
+                                        </div>
+                                        <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="tanggal_lahir" class="form-label">Tanggal Kelahiran</label>
                                                 <input class="form-control" type="date" name="tanggal_lahir" id="tanggal_lahir" required>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="foto" class="form-label">Foto anda</label>
                                                 <input type="file" name="foto" id="foto" class="form-control" required>

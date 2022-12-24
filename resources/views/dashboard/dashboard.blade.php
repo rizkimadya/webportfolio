@@ -41,7 +41,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-5">
+                        <div class="col-sm-4">
                             <div class="card mt-3 p-4" style="height: 75vh;">
                                 <h5>Data Pribadi</h5>
                                 <div class="row mt-4">
@@ -59,19 +59,25 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-8">
                             <div class="card mt-3 p-4" style="height: 75vh; overflow: auto;">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="card">
                                             <h5>Tema 1</h5>
                                             <img src="{{ asset('assets/img/tema1.png') }}" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="card">
                                             <h5>Tema 2</h5>
                                             <img src="{{ asset('assets/img/tema2.png') }}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <h5>Tema 3</h5>
+                                            <img src="{{ asset('assets/img/tema3.png') }}" alt="">
                                         </div>
                                     </div>
                                 </div>

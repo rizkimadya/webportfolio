@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Portfolio.id | Tema2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
@@ -73,7 +73,7 @@
                                                         <p>:</p>
                                                     </div>
                                                     <div class="col-6">
-                                                        <p>{{ auth()->user()->agama }}</p>
+                                                        <p>{{ $tema->agama }}</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -84,7 +84,7 @@
                                                         <p>:</p>
                                                     </div>
                                                     <div class="col-6">
-                                                        <p>{{ auth()->user()->kewarganegaraan }}</p>
+                                                        <p>{{ $tema->kewarganegaraan }}</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -267,16 +267,16 @@
         </div>
     </section>
 
-    <section id="tombol">
+    {{-- <section id="tombol">
         <div class="container my-4">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
                     <a href="{{ route('index.tema') }}" class="btn btn-danger me-2">Kembali</a>
-                    {{-- <a href="{{ route('index.tema1') }}" class="btn btn-danger">Download</a> --}}
+                    <a href="{{ route('index.tema1') }}" class="btn btn-danger">Download</a>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

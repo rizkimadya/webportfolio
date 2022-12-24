@@ -52,7 +52,7 @@
 
                                         <a href="{{ route('create.tema') }}" class="btn btn-primary"
                                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
-                                                class="bi bi-file-earmark-plus-fill"></i> Tambah Tema</a>
+                                                class="bi bi-file-earmark-plus-fill"></i> Tambah Data Portfolio</a>
                                         {{-- <a href="{{ route('create.tema2') }}" class="btn btn-primary"
                                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                                                 class="bi bi-file-earmark-plus-fill"></i> Tambah Tema2</a> --}}
@@ -73,18 +73,27 @@
                                         </thead>
                                         <tbody>
                                             @foreach ($tema as $item)
-                                                <tr>
-                                                    <td>{{ $loop->iteration }} .</td>
-                                                    <td>
-                                                        <img src="/storage/{{ $item->foto }}" width="100px"
-                                                        alt="">
-                                                    </td>
-                                                    <td>{{ $item->id_tema }}</td>
-                                                    <td>{{ $item->nama }}</td>
-                                                    <td>{{ $item->pekerjaan }}</td>
-                                                    <td class="text-center">
+                                            <tr>
+                                                <td>{{ $loop->iteration }} .</td>
+                                                <td>
+                                                    <img src="/storage/{{ $item->foto }}" width="100px"
+                                                    alt="">
+                                                </td>
+                                                <td>{{ $item->id_tema }}</td>
+                                                <td>{{ $item->nama }}</td>
+                                                <td>{{ $item->pekerjaan }}</td>
+                                                <td class="text-center">
 
-                                                        <a href={{ $item->id_tema == "tema1" ? "tema/show/$item->id" : "tema2/show/$item->id" }}
+                                                        {{-- <a href={{ $item->id_tema == "tema1" ? "tema/show/$item->id" : "tema2/show/$item->id" }}
+                                                            class="btn btn-primary"><i class="bi bi-eye-fill"></i></a> --}}
+                                                        <a href= 
+                                                        @if ($item->id_tema == "tema1")
+                                                            {{ "tema/show/$item->id" }}
+                                                        @elseif ($item->id_tema == "tema2")
+                                                            {{ "tema2/show/$item->id" }}
+                                                        @else
+                                                            {{ "tema3/show/$item->id" }}
+                                                        @endif
                                                             class="btn btn-primary"><i class="bi bi-eye-fill"></i></a>
 
                                                         <a href="tema/edit/{{ $item->id }}"

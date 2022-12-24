@@ -3,15 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\Tema;
+use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class TemaController extends Controller
 {
     public function index(){
-        $tema = Tema::all();
-        return view('tema1.index')->with('tema', $tema);
+        $user = Auth::user();
+        $tema = Tema::where('id',$user->id)->get();
+        
+        return view('tema1.index',compact('tema'));
     }
 
     /**
@@ -32,9 +36,12 @@ class TemaController extends Controller
      */
     public function store(Request $request)
     {
+        $data = $request->all();
         $data = $request->validate([
             'id_tema' => 'required',
             'nama' => 'required',
+            'agama' => 'required',
+            'kewarganegaraan' => 'required',
             'pekerjaan' => 'required',
             'tanggal_lahir' => 'required',
             'tempat_lahir' => 'required',
@@ -44,9 +51,46 @@ class TemaController extends Controller
             'nama_ig' => 'required',
             'email' => 'required',
             'hobi1' => 'required',
+            // 'hobi2' => 'required',
+            // 'hobi3' => 'required',
+
+            // 'keahlian1' => 'required',
+            // 'persentase1' => 'required',
+            // 'keahlian2' => 'required',
+            // 'persentase2' => 'required',
+            // 'keahlian3' => 'required',
+            // 'persentase3' => 'required',
+            // 'keahlian4' => 'required',
+            // 'persentase4' => 'required',
+            // 'keahlian5' => 'required',
+            // 'persentase5' => 'required',
+
+            // 'sd' => 'required',
+            // 'tahun_sd' => 'required',
+            // 'smp' => 'required',
+            // 'tahun_smp' => 'required',
+            // 'sma' => 'required',
+            // 'tahun_sma' => 'required',
+            // 'kuliah' => 'required',
+            // 'tahun_kuliah' => 'required',
+            
+            // 'organisasi1' => 'required',
+            // 'jabatan1' => 'required',
+            // 'tahun_menjabat1' => 'required',
+            // 'organisasi2' => 'required',
+            // 'jabatan2' => 'required',
+            // 'tahun_menjabat2' => 'required',
+            // 'organisasi3' => 'required',
+            // 'jabatan3' => 'required',
+            // 'tahun_menjabat3' => 'required',
+
+            // 'moto' => 'required'
+            
         ]);
         
+        
         $tema = new Tema();
+        $tema->user_id = Auth::user()->id;
         $tema->fill($data);
 
          // file
@@ -78,6 +122,11 @@ class TemaController extends Controller
     {
         $tema = Tema::where('id', $id)->first();
         return view('tema2.show', ['tema' => $tema]);
+    }
+    public function show3($id)
+    {
+        $tema = Tema::where('id', $id)->first();
+        return view('tema3.show', ['tema' => $tema]);
     }
 
     /**

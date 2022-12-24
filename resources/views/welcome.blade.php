@@ -149,7 +149,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card mb-3">
-                        <img src="{{ asset('assets/img/tema1.png') }}" alt="">
+                        <img src="{{ asset('assets/img/tema3.png') }}" alt="">
                         <div class="py-3">
                             <p class="nama fw-bold fs-5">Tema 3</p>
                             <p class="keterangan">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, quo.

@@ -16,8 +16,11 @@ return new class extends Migration
         Schema::create('temas', function (Blueprint $table) {
             $table->id();
             $table->string('id_tema');
+            $table->foreignId('user_id');
             
             $table->string('nama');
+            $table->string('agama');
+            $table->string('kewarganegaraan');
             $table->string('pekerjaan');
             $table->string('tanggal_lahir');
             $table->string('tempat_lahir');

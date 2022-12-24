@@ -42,12 +42,17 @@ Route::namespace('App\Http\Controllers')->group(function () {
         Route::get('/tema/create', [TemaController::class, 'create'])->name('create.tema');
         Route::post('/tema', [TemaController::class, 'store'])->name('store.tema');
         Route::get('/tema/edit/{id}', [TemaController::class, 'edit'])->name('edit.tema');
-        Route::get('/tema/show/{id}', [TemaController::class, 'show'])->name('show.tema');
         Route::post('/tema/update/{id}', [TemaController::class, 'update'])->name('update.tema');
         Route::delete('/tema/{id}', [TemaController::class, 'destroy'])->name('destroy.tema');
         
-        // route tema2
-        Route::get('/tema2/show/{id}', [TemaController::class, 'show2'])->name('show.tema2');
-
     });
 });
+
+// route tema1
+Route::get('/tema/show/{id}', [TemaController::class, 'show'])->name('show.tema');
+
+// route tema2
+Route::get('/tema2/show/{id}', [TemaController::class, 'show2'])->name('show.tema2');
+
+// route tema3
+Route::get('/tema3/show/{id}', [TemaController::class, 'show3'])->name('show.tema3');

@@ -52,12 +52,21 @@
                                                 <option value="{{ $tema->id_tema }}">{{ $tema->id_tema }}</option>
                                                 <option value="tema1">Tema 1</option>
                                                 <option value="tema2">Tema 2</option>
+                                                <option value="tema3">Tema 3</option>
                                             </select>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="nama" class="form-label">Nama Lengkap</label>
                                                 <input class="form-control" type="text" name="nama" id="nama" placeholder="masukkan nama" value="{{ $tema->nama }}">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="agama" class="form-label">Agama</label>
+                                                <input class="form-control" type="text" name="agama" id="agama" placeholder="masukkan agama" value="{{ $tema->agama }}">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="kewarganegaraan" class="form-label">Kewarganegaraan</label>
+                                                <input class="form-control" type="text" name="kewarganegaraan" id="kewarganegaraan" placeholder="masukkan kewarganegaraan" value="{{ $tema->kewarganegaraan }}">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="pekerjaan" class="form-label">Pekerjaan</label>
@@ -67,12 +76,12 @@
                                                 <label for="tempat_lahir" class="form-label">Tempat Kelahiran</label>
                                                 <input class="form-control" type="text" name="tempat_lahir" id="tempat_lahir" placeholder="masukkan tempat kelahiran" value="{{ $tema->tempat_lahir }}">
                                             </div>    
+                                        </div>
+                                        <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="tanggal_lahir" class="form-label">Tanggal Kelahiran</label>
                                                 <input class="form-control" type="date" name="tanggal_lahir" id="tanggal_lahir" value="{{ $tema->tanggal_lahir }}">
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="foto" class="form-label">Foto anda</label>
                                                 <img src="/storage/{{ $tema->foto }}" width="200px"

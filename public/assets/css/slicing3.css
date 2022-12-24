@@ -1,0 +1,98 @@
+*{
+    font-family: poppins;
+}
+#tema1 .cards{
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius:20px;
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+#tema1 .card-kiri{
+    border: none;
+    background-color: #2A2B3D;
+    border-radius: 60px; 
+}
+#tema1 .card-kiri img{
+    border-radius: 50%;
+    border: 10px solid #fff;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+#tema1 .card-kiri .nama{
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #fff;
+    letter-spacing: 0em;
+}
+#tema1 .card-kiri .keterangan{
+    background-color: #B4BCFF;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+}
+
+
+/* sosmed */
+.sosmed .isi-sosmed i{
+    color: #B4BCFF;
+}
+.sosmed .isi-sosmed .isi{
+    font-size: 20px;
+    font-weight: 400;
+    color: #B4BCFF;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+/* hobi */
+.hobi .isi-hobi .isi{
+    font-weight: 500;
+    font-size: 20px;
+    color: #B4BCFF;
+}
+
+/* keahlian */
+.keahlian{
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+.keahlian .isi p{
+    font-size: 18px;
+    color: #B4BCFF;
+}
+
+
+
+/* kanan */
+.kanan .card{
+    background-color: #DAE3F3;
+    border: none;
+    border-radius: 20px 0px 0px 0px;
+    margin-bottom: 30px;
+}
+.kanan .card .keterangan{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color:  #2A2B3D;
+    letter-spacing: 0em;
+    width: fit-content;
+    box-sizing: border-box;
+    border-radius: 8px 8px 40px 8px;
+    padding: 10px 60px 10px 60px;
+}
+.kanan .card p{
+    font-size: 18px;
+    color:   #012951;
+    font-weight: 500;
+}

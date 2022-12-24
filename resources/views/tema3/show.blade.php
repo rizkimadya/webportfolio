@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio.id | Tema1</title>
+    <title>Portfolio.id | Tema3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
     <!-- link css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/slicing.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slicing3.css') }}">
 
     <!-- link font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -28,71 +28,7 @@
                 <div class="col-md-12">
                     <div class="cards">
                         <div class="row">
-                            <div class="col-6">
-                                <div class="card card-kiri">
-                                    <div class="foto text-center">
-                                        <img src="/storage/{{ $tema->foto }}" width="100px"
-                                        alt="">
-                                        {{-- <p class="text-center fs-4 text-light">{{ $tema->pekerjaan }}</p> --}}
-                                        <p class="nama">{{ $tema->pekerjaan }}</p>
-                                    </div>
-                                    <div class="sosmed">
-                                        <p class="keterangan text-center">SOSIAL MEDIA</p>
-                                        <div class="isi-sosmed px-5 ">
-                                            <div class="wa d-flex">
-                                                <i class="bi bi-whatsapp fs-3"></i>
-                                                <p class="isi align-self-center mb-0 ms-3">{{ $tema->no_wa }}</p>
-                                            </div>
-                                            <div class="ig d-flex">
-                                                <i class="bi bi-instagram fs-3"></i>
-                                                <p class="isi align-self-center mb-0 ms-3">{{ $tema->nama_ig }}</p>
-                                            </div>
-                                            <div class="email d-flex mb-4">
-                                                <i class="bi bi-envelope fs-3"></i>
-                                                <p class="isi align-self-center mb-0 ms-3">{{ $tema->email }}</p>
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-
-                                    <div class="hobi">
-                                        <p class="keterangan text-center">HOBI</p>
-                                        <div class="isi-hobi d-flex justify-content-center">
-                                            <p class="isi p-3">{{ $tema->hobi1 }}</p>
-                                            <p class="isi p-3">{{ $tema->hobi2 }}</p>
-                                            <p class="isi p-3">{{ $tema->hobi3 }}</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="keahlian">
-                                        <p class="keterangan text-center">KEAHLIAN</p>
-                                        <div class="isi">
-                                            <div class="d-flex px-3">
-                                                <p class="isi-keahlian">{{ $tema->keahlian1 }}</p>
-                                                <p class="persentase ms-auto">{{ $tema->persentase1 }}</p>
-                                            </div>
-                                            <div class="d-flex px-3">
-                                                <p class="isi-keahlian">{{ $tema->keahlian2 }}</p>
-                                                <p class="persentase ms-auto">{{ $tema->persentase2 }}</p>
-                                            </div>
-                                            <div class="d-flex px-3">
-                                                <p class="isi-keahlian">{{ $tema->keahlian3 }}</p>
-                                                <p class="persentase ms-auto">{{ $tema->persentase3 }}</p>
-                                            </div>
-                                            <div class="d-flex px-3">
-                                                <p class="isi-keahlian">{{ $tema->keahlian4 }}</p>
-                                                <p class="persentase ms-auto">{{ $tema->persentase4 }}</p>
-                                            </div>
-                                            <div class="d-flex px-3">
-                                                <p class="isi-keahlian">{{ $tema->keahlian5 }}</p>
-                                                <p class="persentase ms-auto">{{ $tema->persentase5 }}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
+                            
                             <div class="col-6 kanan">
                                 <div class="data_pribadi">
                                     <div class="card">
@@ -128,7 +64,7 @@
                                                     <p>:</p>
                                                 </div>
                                                 <div class="col-6">
-                                                    <p>{{ $tema->agama }}</p>
+                                                    <p>{{ $tema ->agama }}</p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -139,7 +75,7 @@
                                                     <p>:</p>
                                                 </div>
                                                 <div class="col-6">
-                                                    <p>{{ $tema->kewarganegaraan }}</p>
+                                                    <p>{{ $tema ->kewarganegaraan }}</p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -231,6 +167,71 @@
                                         <h6 class="keterangan">MOTO HIDUP</h6>
                                         <div class="px-4">
                                             <P>{{ $tema->moto }}</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="card card-kiri">
+                                    <div class="foto text-center">
+                                        <img src="/storage/{{ $tema->foto }}" width="100px"
+                                        alt="">
+                                        {{-- <p class="text-center fs-4 text-light">{{ $tema->pekerjaan }}</p> --}}
+                                        <p class="text-light fs-4 mb-0">{{ $tema->pekerjaan }}</p>
+                                        <p class="nama">{{ $tema->nama }}</p>
+                                    </div>
+                                    <div class="sosmed">
+                                        <p class="keterangan text-center">SOSIAL MEDIA</p>
+                                        <div class="isi-sosmed px-5 ">
+                                            <div class="wa d-flex">
+                                                <i class="bi bi-whatsapp fs-3"></i>
+                                                <p class="isi align-self-center mb-0 ms-3">{{ $tema->no_wa }}</p>
+                                            </div>
+                                            <div class="ig d-flex">
+                                                <i class="bi bi-instagram fs-3"></i>
+                                                <p class="isi align-self-center mb-0 ms-3">{{ $tema->nama_ig }}</p>
+                                            </div>
+                                            <div class="email d-flex mb-4">
+                                                <i class="bi bi-envelope fs-3"></i>
+                                                <p class="isi align-self-center mb-0 ms-3">{{ $tema->email }}</p>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+
+                                    <div class="hobi">
+                                        <p class="keterangan text-center">HOBI</p>
+                                        <div class="isi-hobi d-flex justify-content-center">
+                                            <p class="isi p-3">{{ $tema->hobi1 }}</p>
+                                            <p class="isi p-3">{{ $tema->hobi2 }}</p>
+                                            <p class="isi p-3">{{ $tema->hobi3 }}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="keahlian">
+                                        <p class="keterangan text-center">KEAHLIAN</p>
+                                        <div class="isi">
+                                            <div class="d-flex px-3">
+                                                <p class="isi-keahlian">{{ $tema->keahlian1 }}</p>
+                                                <p class="persentase ms-auto">{{ $tema->persentase1 }}</p>
+                                            </div>
+                                            <div class="d-flex px-3">
+                                                <p class="isi-keahlian">{{ $tema->keahlian2 }}</p>
+                                                <p class="persentase ms-auto">{{ $tema->persentase2 }}</p>
+                                            </div>
+                                            <div class="d-flex px-3">
+                                                <p class="isi-keahlian">{{ $tema->keahlian3 }}</p>
+                                                <p class="persentase ms-auto">{{ $tema->persentase3 }}</p>
+                                            </div>
+                                            <div class="d-flex px-3">
+                                                <p class="isi-keahlian">{{ $tema->keahlian4 }}</p>
+                                                <p class="persentase ms-auto">{{ $tema->persentase4 }}</p>
+                                            </div>
+                                            <div class="d-flex px-3">
+                                                <p class="isi-keahlian">{{ $tema->keahlian5 }}</p>
+                                                <p class="persentase ms-auto">{{ $tema->persentase5 }}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

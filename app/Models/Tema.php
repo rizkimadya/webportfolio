@@ -10,6 +10,8 @@ class Tema extends Model
     protected $fillable = [
         'id_tema',
         'nama',
+        'agama',
+        'kewarganegaraan',
         'pekerjaan',
         'tanggal_lahir',
         'tempat_lahir',
@@ -22,9 +24,7 @@ class Tema extends Model
         'email',
 
         //data hobi
-        'hobi1', 
-        'hobi2', 
-        'hobi3',
+        
         
         // data keahlian
         'keahlian1',
@@ -63,4 +63,10 @@ class Tema extends Model
         'moto'
         
     ];
+
+    protected $with = 'user';
+    
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }
