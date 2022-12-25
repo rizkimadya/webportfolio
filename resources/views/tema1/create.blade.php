@@ -55,44 +55,58 @@
                                                 <option value="tema3">Tema 3</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="nama" class="form-label">Nama Lengkap</label>
-                                                <input class="form-control" type="text" name="nama" id="nama" placeholder="masukkan nama" required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="agama" class="form-label">Agama</label>
-                                                <input class="form-control" type="text" name="agama" id="agama" placeholder="masukkan agama" required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="kewarganegaraan" class="form-label">Kewarganegaraan</label>
-                                                <input class="form-control" type="text" name="kewarganegaraan" id="kewarganegaraan" placeholder="masukkan kewarganegaraan" required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="pekerjaan" class="form-label">Pekerjaan</label>
-                                                <input class="form-control" type="text" name="pekerjaan" id="pekerjaan" placeholder="masukkan pekerjaan" required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="tempat_lahir" class="form-label">Tempat Kelahiran</label>
-                                                <input class="form-control" type="text" name="tempat_lahir" id="tempat_lahir" placeholder="masukkan tempat kelahiran" required>
-                                            </div>    
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="tanggal_lahir" class="form-label">Tanggal Kelahiran</label>
-                                                <input class="form-control" type="date" name="tanggal_lahir" id="tanggal_lahir" required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="foto" class="form-label">Foto anda</label>
-                                                <input type="file" name="foto" id="foto" class="form-control" required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="alamat" class="form-label">Alamat Sekarang</label>
-                                                <textarea name="alamat" id="alamat" rows="8" placeholder="Masukkan alamat anda" class="form-control" required></textarea>
-                                            </div>
-                                        </div>
                                         <div class="col-sm-6">
                                             <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#pribadi" aria-expanded="false"
+                                                            aria-controls="pribadi">
+                                                            Data Pribadi
+                                                        </button>
+                                                    </h2>
+                                                    <div id="pribadi" class="accordion-collapse collapse"
+                                                        aria-labelledby="panelsStayOpen-headingTwo">
+                                                        <div class="accordion-body">
+                                                            <hr>
+                                                            <div class="mb-3">
+                                                                <label for="nama" class="form-label">Nama Lengkap</label>
+                                                                <input class="form-control" type="text" name="nama" id="nama" placeholder="masukkan nama" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="agama" class="form-label">Agama</label>
+                                                                <input class="form-control" type="text" name="agama" id="agama" placeholder="masukkan agama" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="kewarganegaraan" class="form-label">Kewarganegaraan</label>
+                                                                <input class="form-control" type="text" name="kewarganegaraan" id="kewarganegaraan" placeholder="masukkan kewarganegaraan" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="pekerjaan" class="form-label">Pekerjaan</label>
+                                                                <input class="form-control" type="text" name="pekerjaan" id="pekerjaan" placeholder="masukkan pekerjaan" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="tempat_lahir" class="form-label">Tempat Kelahiran</label>
+                                                                <input class="form-control" type="text" name="tempat_lahir" id="tempat_lahir" placeholder="masukkan tempat kelahiran" required>
+                                                            </div>   
+                                                            <div class="mb-3">
+                                                                <label for="tanggal_lahir" class="form-label">Tanggal Kelahiran</label>
+                                                                <input class="form-control" type="date" name="tanggal_lahir" id="tanggal_lahir" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="foto" class="form-label">Foto anda</label>
+                                                                <input type="file" name="foto" id="foto" class="form-control" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="alamat" class="form-label">Alamat Sekarang</label>
+                                                                <textarea name="alamat" id="alamat" rows="8" placeholder="Masukkan alamat anda" class="form-control" required></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion mt-3" id="accordionPanelsStayOpenExample">
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                                                         <button class="accordion-button collapsed" type="button"
