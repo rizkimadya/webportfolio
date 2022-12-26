@@ -13,7 +13,7 @@ class TemaController extends Controller
 {
     public function index(){
         $user = Auth::user();
-        $tema = Tema::where('id',$user->id)->get();
+        $tema = Tema::where('user_id',$user->id)->get();
         
         return view('tema1.index',compact('tema'));
     }

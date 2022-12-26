@@ -62,7 +62,7 @@
                                                         <p>:</p>
                                                     </div>
                                                     <div class="col-6">
-                                                        <p>{{ $tema->tempat_lahir }}, {{ $tema->tanggal_lahir }}</p>
+                                                        <p>{{ $tema->tempat_lahir }}, {{ \Carbon\Carbon::parse($tema->tanggal_lahir)->isoFormat('d MMMM Y') }}</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
