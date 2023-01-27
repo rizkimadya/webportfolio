@@ -24,6 +24,9 @@ class Tema extends Model
         'email',
 
         //data hobi
+        'hobi1',
+        'hobi2',
+        'hobi3',
         
         
         // data keahlian
